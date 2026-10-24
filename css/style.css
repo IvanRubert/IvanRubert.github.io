@@ -158,6 +158,14 @@
       box-shadow: 0 0 22px rgba(35, 134, 54, .12);
     }
     .button.primary:hover { background: #2ea043; border-color: #3fb950; }
+
+    .button.secondary {
+      color: #fff;
+      border-color: rgba(51, 137, 145, .55);
+      background: #1D616B;
+      box-shadow: 0 0 22px rgba(35, 134, 54, .12);
+    }
+    .button.secondary:hover { background: #267580; border-color: #338991; }
     .button svg { width: 16px; height: 16px; }
 
     footer {
@@ -267,7 +275,8 @@
       font-weight: 400;
     }
 
-    .linktree-link.primary .linktree-hint {
+    .linktree-link.primary .linktree-hint,
+    .linktree-link.secondary .linktree-hint {
       color: rgba(255, 255, 255, .78);
     }
 

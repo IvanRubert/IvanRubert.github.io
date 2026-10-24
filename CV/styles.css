@@ -1,0 +1,28 @@
+@font-face{font-family:'f_Montserrat_Regular';src:url('assets/fonts/f_Montserrat_Regular.ttf') format('truetype');}
+@font-face{font-family:'f_Montserrat_ExtraBold';src:url('assets/fonts/f_Montserrat_ExtraBold.ttf') format('truetype');}
+@font-face{font-family:'f_Montserrat_Bold';src:url('assets/fonts/f_Montserrat_Bold.ttf') format('truetype');}
+@font-face{font-family:'f_Montserrat_SemiBold';src:url('assets/fonts/f_Montserrat_SemiBold.ttf') format('truetype');}
+*{box-sizing:border-box}
+html{-webkit-print-color-adjust:exact;print-color-adjust:exact}
+body{margin:0;background:#e9e9ec;font-family:system-ui,sans-serif}
+.toolbar{position:sticky;top:0;z-index:10;display:flex;gap:8px;justify-content:center;padding:10px;background:#222}
+.toolbar button{padding:8px 16px;border:0;border-radius:6px;background:#4f7cff;color:#fff;font-size:14px;cursor:pointer}
+.page{position:relative;overflow:hidden;margin:16px auto;background:#fff;box-shadow:0 2px 12px rgba(0,0,0,.25)}
+.bg{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none}
+.t{position:absolute;white-space:pre;transform-origin:0 0}
+.t a{color:inherit;text-decoration:none}
+.ic{position:absolute}
+.lk{position:absolute;display:block}
+.s1{font-family:'f_Montserrat_Regular',sans-serif;font-size:9.95pt;color:#000000;font-weight:400;font-style:normal}
+.s2{font-family:'f_Montserrat_Regular',sans-serif;font-size:30.51pt;color:#000000;font-weight:400;font-style:normal}
+.s3{font-family:'f_Montserrat_ExtraBold',sans-serif;font-size:17.0pt;color:#000000;font-weight:400;font-style:normal}
+.s4{font-family:'f_Montserrat_Bold',sans-serif;font-size:10.0pt;color:#000000;font-weight:400;font-style:normal}
+.s5{font-family:'f_Montserrat_SemiBold',sans-serif;font-size:10.0pt;color:#000000;font-weight:400;font-style:normal}
+.s6{font-family:'f_Montserrat_SemiBold',sans-serif;font-size:8.65pt;color:#ffffff;font-weight:400;font-style:normal}
+@page pg1{size:595.50pt 842.25pt;margin:0}
+.pg1{page:pg1}
+@media print{
+ body{background:none} .toolbar{display:none}
+ .page{margin:0;box-shadow:none;break-after:page;break-inside:avoid}
+ .page:last-child{break-after:auto}
+}
