@@ -99,7 +99,8 @@
     .blue { color: var(--blue); }
     .indent { padding-left: 40px; }
 
-    .big-404 {
+    .big-404,
+    .big-status {
       margin: 4px 0 8px;
       font-size: clamp(76px, 17vw, 138px);
       line-height: .95;
@@ -109,7 +110,8 @@
       text-shadow: 0 0 55px rgba(88, 166, 255, .12);
     }
 
-    .big-404 span { color: var(--green); }
+    .big-404 span,
+    .big-status span { color: var(--green); }
 
     h1 {
       margin: 22px 0 10px;
